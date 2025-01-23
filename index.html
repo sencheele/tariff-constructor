@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./scripts/main.js" defer></script>
+  <title>Конструктор тарифов NFT</title>
+</head>
+<body>
+  <main class="content">
+    <div class="intro container">
+      <h1 class="intro__title">
+        Конструктор тарифов HFT
+      </h1>
+      <div class="intro__description intro__description--desktop">
+        <p>
+          Настройте все необходимые параметры под свой запрос: выбирайте нужные рынки и&nbsp;оборудование, а&nbsp;мы&nbsp;сразу покажем стоимость&nbsp;&mdash; все просто и&nbsp;прозрачно.
+        </p>
+      </div>
+
+      <div class="intro__description intro__description--tablet">
+        <p>
+          Для прямого подключения к&nbsp;бирже необходимы надежное оборудование и&nbsp;безупречное соединение. Команда IT&nbsp;Invest предлагает вам воспользоваться одним из&nbsp;возможных вариантов.
+        </p>
+      </div>
+    </div>
+
+    <form class="form container" action="/" method="post">
+      <div class="form__wrapper">
+        <fieldset class="form-section market">
+          <div class="form-section__legend">
+            <legend>
+              Фондовый рынок: шлюзы
+            </legend>
+          </div>
+
+          <div class="form-section__body">
+            <ul class="market__list">
+              <li class="market__item">
+                <label class="form__label market__label">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="fast" id="fast" value="fast" checked>
+                  <span class="form__fakecheck"></span>
+                </label>
+
+                <div class="market__details">
+                  <div class="market__box">
+                    <h3 class="market__name">
+                      Fast
+                    </h3>
+                    <span class="market__price">
+                      2 200 ₽ за подключение
+                    </span>
+                  </div>
+
+                  <div class="market__box">
+                    <div class="market__description">
+                      <p>
+                        Получение котировок
+                      </p>
+                    </div>
+                    <span class="market__price">
+                      +2 200 ₽ / мес.
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="market__item">
+                <label class="form__label market__label">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="simba" id="simba" value="simba" checked>
+                  <span class="form__fakecheck"></span>
+                </label>
+
+                <div class="market__details">
+                  <div class="market__box">
+                    <h3 class="market__name">
+                      Simba asts
+                    </h3>
+                    <span class="market__price">
+                      2 200 ₽ за подключение
+                    </span>
+                  </div>
+
+                  <div class="market__box">
+                    <div class="market__description">
+                      <p>
+                        Получение котировок
+                      </p>
+                    </div>
+                    <span class="market__price">
+                      +2 200 ₽ / мес.
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="market__item">
+                <label class="form__label market__label">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="fix" id="fix" value="fix" checked>
+                  <span class="form__fakecheck"></span>
+                </label>
+
+                <div class="market__details">
+                  <div class="market__box">
+                    <h3 class="market__name">
+                      Fix
+                    </h3>
+                    <span class="market__price">
+                      2 200 ₽ за подключение
+                    </span>
+                  </div>
+
+                  <div class="market__box">
+                    <div class="market__description">
+                      <p>
+                        Подача приказов
+                      </p>
+                    </div>
+                    <span class="market__price">
+                      +2 200 ₽ / мес.
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="market__item">
+                <label class="form__label market__label">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="teap" id="teap" value="teap" checked>
+                  <span class="form__fakecheck"></span>
+                </label>
+
+                <div class="market__details">
+                  <div class="market__box">
+                    <h3 class="market__name">
+                      Teap
+                    </h3>
+                    <span class="market__price">
+                      1 100 ₽ за подключение
+                    </span>
+                  </div>
+
+                  <div class="market__description">
+                    <p>
+                      Подача приказов и получение котировок
+                    </p>
+                  </div>
+
+                  <ul class="market__sublist">
+                    <li class="market__subitem">
+                      <label class="form__label market__label market__label--sub">
+                        <input class="form__checkbox visually-hidden" type="checkbox" name="commercial" id="commercial" value="commercial" checked>
+                        <span class="form__fakecheck"></span>
+                      </label>
+
+                      <div class="market__subdetails">
+                        <h4 class="market__subname">
+                          Торговый
+                        </h4>
+                        <span class="market__price">
+                          +550 руб./мес.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="market__subitem">
+                      <label class="form__label market__label market__label--sub">
+                        <input class="form__checkbox visually-hidden" type="checkbox" name="viewing" id="viewing" value="viewing" checked>
+                        <span class="form__fakecheck"></span>
+                      </label>
+
+                      <div class="market__subdetails">
+                        <h4 class="market__subname">
+                          Просмотровый
+                        </h4>
+                        <span class="market__price">
+                          +550 руб./мес.
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <div class="form-section__legend">
+            <legend>
+              Оборудование
+            </legend>
+          </div>
+
+          <div class="form-section__body form-section__body--equipment">
+            <div class="location">
+              <h2 class="location__title">
+                Размещение вашего сервера
+              </h2>
+
+              <ul class="location__list">
+                <li class="location__item">
+                  <label class="form__label location__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox" name="moex" id="moex" value="moex" checked>
+                    <span class="form__fakecheck"></span>
+                  </label>
+
+                  <div class="location__info">
+                    <div class="location__details">
+                      <h3 class="location__name">
+                        Зона колокации MOEX
+                      </h3>
+                      <span class="location__price">
+                        +28 320 ₽ за монтаж
+                      </span>
+                    </div>
+
+                    <div class="location__wrapper">
+                      <div class="control">
+                        <label class="control__label" for="moex-zone">
+                          Юниты
+                        </label>
+                        <span class="control__value">
+                          <span class="control__value--append">1</span>
+                        </span>
+                        <input class="control__range" type="range" value="1" name="moex-zone" id="moex-zone" min="1" max="5">
+                        <ul class="control__list">
+                          <li class="control__item">
+                            1
+                          </li>
+                          <li class="control__item">
+                            2
+                          </li>
+                          <li class="control__item">
+                            3
+                          </li>
+                          <li class="control__item">
+                            4
+                          </li>
+                          <li class="control__item">
+                            5
+                          </li>
+                        </ul>
+                      </div>
+
+                      <span class="location__price location__price--control">
+                        +28 320 ₽ / мес.
+                      </span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="location__item">
+                  <label class="form__label location__label">
+                    <input class="form__checkbox visually-hidden" type="checkbox" name="free" id="free" value="free" checked>
+                    <span class="form__fakecheck"></span>
+                  </label>
+
+                  <div class="location__info">
+                    <div class="location__details">
+                      <h3 class="location__name">
+                        Свободная зона
+                      </h3>
+                      <span class="location__price">
+                        +7 080 ₽ за монтаж
+                      </span>
+                    </div>
+
+                    <div class="location__wrapper">
+
+                      <div class="control">
+                        <label class="control__label" for="moex-zone">
+                          Юниты
+                        </label>
+                        <span class="control__value">
+                          <span class="control__value--append">1</span>
+                        </span>
+                        <input class="control__range" type="range" value="1" name="free-zone" id="free-zone" min="1" max="5">
+                        <ul class="control__list">
+                          <li class="control__item">
+                            1
+                          </li>
+                          <li class="control__item">
+                            2
+                          </li>
+                          <li class="control__item">
+                            3
+                          </li>
+                          <li class="control__item">
+                            4
+                          </li>
+                          <li class="control__item">
+                            5
+                          </li>
+                        </ul>
+                      </div>
+
+                      <span class="location__price location__price--control">
+                        +4 720 ₽ / мес.
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="virtual">
+              <div class="virtual__wrapper">
+                <label class="form__label virtual__label">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="virtual-machine" id="virtual-machine" value="virtual-machine" checked>
+                  <span class="form__fakecheck"></span>
+                </label>
+
+                <div class="virtual__info">
+                  <h3 class="virtual__name">
+                    Виртуальная машина
+                  </h3>
+
+                  <div class="virtual__description">
+                    <p>
+                      В&nbsp;зоне колокации MOEX
+                    </p>
+                  </div>
+
+                  <div class="virtual__config">
+
+                    <div class="virtual__switch switch">
+                      <input class="switch__radio switch__radio--windows visually-hidden" type="radio" id="windows" name="system" value="windows" checked>
+                      <label class="switch__label" for="windows">
+                        Windows
+                      </label>
+
+                      <input class="switch__radio switch__radio--linux visually-hidden" type="radio" id="linux" name="system" value="linux">
+                      <label class="switch__label" for="linux">
+                        Linux
+                      </label>
+
+                      <div class="switch__slider"></div>
+                    </div>
+
+                    <input class="virtual__config-input" type="text" name="version" id="version" placeholder="Версия системы">
+
+                    <span class="virtual__price">
+                      6 990 ₽ / мес.
+                    </span>
+                  </div>
+
+                  <ul class="virtual__list">
+                    <li class="virtual__item">
+                      <div class="control">
+                        <label class="control__label" for="moex-zone">
+                          Процессор
+                        </label>
+                        <span class="control__value">
+                          <span class="control__value--append">1</span> ядро
+                        </span>
+                        <input class="control__range" type="range" value="1" name="moex-zone" id="moex-zone" min="1" max="8">
+                        <ul class="control__list">
+                          <li class="control__item">
+                            1
+                          </li>
+                          <li class="control__item">
+                            2
+                          </li>
+                          <li class="control__item">
+                            3
+                          </li>
+                          <li class="control__item">
+                            4
+                          </li>
+                          <li class="control__item">
+                            5
+                          </li>
+                          <li class="control__item">
+                            6
+                          </li>
+                          <li class="control__item">
+                            7
+                          </li>
+                          <li class="control__item">
+                            8
+                          </li>
+                        </ul>
+                      </div>
+
+                      <span class="virtual__price virtual__price--control">
+                        +1 500 руб./мес.
+                      </span>
+                    </li>
+
+                    <li class="virtual__item">
+                      <div class="control">
+                        <label class="control__label" for="moex-zone">
+                          Оперативная память
+                        </label>
+                        <span class="control__value">
+                          <span class="control__value--append">1</span> GB
+                        </span>
+                        <input class="control__range" type="range" value="1" name="moex-zone" id="moex-zone" min="1" max="12">
+                        <ul class="control__list">
+                          <li class="control__item">
+                            1
+                          </li>
+                          <li class="control__item">
+                            2
+                          </li>
+                          <li class="control__item">
+                            3
+                          </li>
+                          <li class="control__item">
+                            4
+                          </li>
+                          <li class="control__item">
+                            5
+                          </li>
+                          <li class="control__item">
+                            6
+                          </li>
+                          <li class="control__item">
+                            7
+                          </li>
+                          <li class="control__item">
+                            8
+                          </li>
+                          <li class="control__item">
+                            9
+                          </li>
+                          <li class="control__item">
+                            10
+                          </li>
+                          <li class="control__item">
+                            11
+                          </li>
+                          <li class="control__item">
+                            12
+                          </li>
+                        </ul>
+                      </div>
+
+                      <span class="virtual__price virtual__price--control">
+                        +1 500 руб./мес.
+                      </span>
+                    </li>
+
+                    <li class="virtual__item">
+                      <div class="control">
+                        <label class="control__label" for="moex-zone">
+                          Жесткий диск (SSD)
+                        </label>
+                        <span class="control__value">
+                          <span class="control__value--append">60</span> GB
+                        </span>
+                        <input class="control__range" type="range" value="1" name="moex-zone" id="moex-zone" min="60" max="600" step="60">
+                        <ul class="control__list">
+                          <li class="control__item">
+                            60
+                          </li>
+                          <li class="control__item">
+                            120
+                          </li>
+                          <li class="control__item">
+                            180
+                          </li>
+                          <li class="control__item">
+                            240
+                          </li>
+                          <li class="control__item">
+                            300
+                          </li>
+                          <li class="control__item">
+                            360
+                          </li>
+                          <li class="control__item">
+                            420
+                          </li>
+                          <li class="control__item">
+                            480
+                          </li>
+                          <li class="control__item">
+                            540
+                          </li>
+                          <li class="control__item">
+                            600
+                          </li>
+                        </ul>
+                      </div>
+
+                      <span class="virtual__price virtual__price--control">
+                        +1 500 руб./мес.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <fieldset class="form-section cart">
+        <div class="form-section__legend">
+          <legend>
+            Ваша корзина
+          </legend>
+        </div>
+
+        <div class="form-section__body cart__body">
+          <div class="cart__details">
+            <details class="cart__accordion" open>
+              <summary class="cart__accordion-header">
+                <h2 class="cart__accordion-title">
+                  Разовая оплата
+                  <span class="cart__accordion-indicator"></span>
+                </h2>
+                <span class="cart__accordion-price">
+                  132 640 ₽
+                </span>
+              </summary>
+
+              <div class="cart__accordion-body">
+                <div class="cart__wrapper">
+                  <h3 class="cart__subtitle">
+                    Валютный рынок
+                  </h3>
+
+                  <ul class="cart__details-list">
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        FAST
+                      </h4>
+                      <span class="cart__details-price">
+                        2 200 ₽ за подключение
+                      </span>
+                    </li>
+
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        FIX
+                      </h4>
+                      <span class="cart__details-price">
+                        2 200 ₽ за подключение
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cart__wrapper">
+                  <h3 class="cart__subtitle">
+                    Срочный рынок
+                  </h3>
+
+                  <ul class="cart__details-list">
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        PLAZA II
+                      </h4>
+                      <span class="cart__details-price">
+                        2 200 ₽ за подключение
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details class="cart__accordion" open>
+              <summary class="cart__accordion-header">
+                <h2 class="cart__accordion-title">
+                  Ежемесячная оплата
+                  <span class="cart__accordion-indicator"></span>
+                </h2>
+                <span class="cart__accordion-price">
+                  13 646 ₽
+                </span>
+              </summary>
+
+              <div class="cart__accordion-body">
+                <div class="cart__wrapper">
+                  <h3 class="cart__subtitle">
+                    Валютный рынок
+                  </h3>
+
+                  <ul class="cart__details-list">
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        Получение котировок (FAST)
+                      </h4>
+                      <span class="cart__details-price">
+                        +2 200 ₽ / мес.
+                      </span>
+                    </li>
+
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        Получение котировок (FIX)
+                      </h4>
+                      <span class="cart__details-price">
+                        +2 200 ₽ / мес.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cart__wrapper">
+                  <h3 class="cart__subtitle">
+                    Срочный рынок
+                  </h3>
+
+                  <ul class="cart__details-list">
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        Основной (PLAZA II)
+                      </h4>
+                      <span class="cart__details-price">
+                        +4 400 ₽ / мес.
+                      </span>
+                    </li>
+
+                    <li class="cart__details-item">
+                      <h4 class="cart__details-name">
+                        Транзакционный (PLAZA II)
+                      </h4>
+                      <span class="cart__details-price">
+                        +2 200 ₽ / мес.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <ul class="cart__result-list">
+            <li class="cart__result-item">
+              <span class="cart__result-name">
+                Итого в&nbsp;первый месяц
+              </span>
+              <span class="cart__result-price">
+                147 236 ₽
+              </span>
+            </li>
+
+            <li class="cart__result-item">
+              <span class="cart__result-name">
+                Далее ежемесячно
+              </span>
+              <span class="cart__result-price">
+                13 646 ₽
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <button class="cart__button" type="submit">
+          Оформить заявку
+        </button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

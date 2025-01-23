@@ -1,0 +1,98 @@
+.location {
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: 16px;
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__label {
+    @include mobile {
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 10px;
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      display: inline-flex;
+      flex-direction: column;
+      transform: translateY(-5px);
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 15px;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    @include mobile {
+      position: relative;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__price {
+    flex-shrink: 0;
+    font-size: 15px;
+    color: var(--color-gray-alt);
+
+    &--control {
+      @include mobile {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

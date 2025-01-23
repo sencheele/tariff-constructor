@@ -1,0 +1,24 @@
+:root {
+  --color-light: #fbfbfb;
+  --color-light-alt: #f1f1f1;
+  --color-dark: #0a141b;
+  --color-gray: #5a6165;
+  --color-gray-alt: #8e9498;
+  --color-gray-light: #cccccc;
+  --color-accent: #26c77a;
+
+  --border: 1px solid var(--color-gray-alt);
+  --border-radius: 12px;
+  --border-radius-small: 4px;
+
+  --font-family-base: "Onest", sans-serif;
+
+  --container-width: 1296px;
+  --container-padding-x: 40px;
+
+  --transition-duration: 0.3s;
+
+  @include mobile {
+    --container-padding-x: 20px;
+  }
+}

@@ -1,0 +1,48 @@
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 207px;
+  height: 47px;
+  background-color: var(--color-light-alt);
+  border-radius: 30px;
+  font-size: 15px;
+
+  @include mobile {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  &__radio {
+    &:checked + .switch__label {
+      color: var(--color-light);
+    }
+
+    &--linux:checked ~ .switch__slider {
+      left: calc(50%);
+    }
+  }
+
+  &__label {
+    flex: 1;
+    text-align: center;
+    z-index: 10;
+    transition-duration: var(--transition-duration);
+  }
+
+  &__slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: 39px;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    transition-duration: var(--transition-duration);
+
+    @include mobile {
+      height: 32px;
+    }
+  }
+}
