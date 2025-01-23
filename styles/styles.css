@@ -932,6 +932,11 @@ a {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+.cart__accordion-header::-webkit-details-marker {
+  display: none;
 }
 .cart__accordion-title {
   display: -webkit-inline-box;
